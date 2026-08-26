@@ -965,3 +965,54 @@ footer p{
     }
 
 }
+/* ---------- LIGHTBOX ---------- */
+
+#lightbox{
+
+    position:fixed;
+    inset:0;
+
+    background:rgba(0,0,0,.95);
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    opacity:0;
+    pointer-events:none;
+
+    transition:.3s;
+
+    z-index:99999;
+
+}
+
+#lightbox.open{
+
+    opacity:1;
+    pointer-events:auto;
+
+}
+
+#lightbox img{
+
+    max-width:92%;
+    max-height:88%;
+    border-radius:20px;
+
+}
+
+#closeLightbox{
+
+    position:absolute;
+
+    top:30px;
+    right:40px;
+
+    font-size:48px;
+
+    color:white;
+
+    cursor:pointer;
+
+}
