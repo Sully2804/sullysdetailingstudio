@@ -305,3 +305,24 @@ console.log(
 `Sully's Detailing Studio
 Clean is the Minimum.`
 );
+// ------------------------------
+// BEFORE / AFTER SLIDER
+// ------------------------------
+
+const comparisonSlider = document.querySelector(".slider");
+const afterWrapper = document.querySelector(".after-wrapper");
+const sliderLine = document.querySelector(".slider-line");
+
+if (comparisonSlider && afterWrapper && sliderLine) {
+
+    comparisonSlider.addEventListener("input", () => {
+
+        const value = comparisonSlider.value;
+
+        afterWrapper.style.width = `${value}%`;
+
+        sliderLine.style.left = `${value}%`;
+
+    });
+
+}
