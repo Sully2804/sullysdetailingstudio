@@ -1,1278 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Sully's Detailing Studio | Clean is the Minimum.</title>
-
-    <meta name="description"
-        content="Sully's Detailing Studio — premium automotive detailing, paint correction, ceramic coatings and professional PPF installation in Bury, Greater Manchester.">
-
-    <link rel="icon" href="assets/logo/favicon.png">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
-        rel="stylesheet">
-
-    <link rel="stylesheet" href="style.css">
-
-    <script src="https://kit.fontawesome.com/7f0f0e2d5d.js"
-        crossorigin="anonymous"></script>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sully's Detailing Studio | Paint Protection & Precision Detailing</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-
-
 <body>
 
-
-<!-- =====================================================
-     LOADER
-===================================================== -->
-
-<div id="loader">
-
-    <img src="assets/logo/shield.png" alt="Sully's Detailing Studio">
-
-    <span>Clean is the Minimum.</span>
-
-</div>
-
-
-
-<!-- =====================================================
-     NAVIGATION
-===================================================== -->
-
-<header class="navbar">
-
-    <a href="#home" class="brand logo">
-
-        <img src="assets/logo/shield.png" alt="Sully's Detailing Studio">
-
-        <div>
-            <strong>SULLY'S</strong>
-            <small>DETAILING STUDIO</small>
-        </div>
-
-    </a>
-
-
-    <nav id="navMenu">
-
-        <a href="#services">Services</a>
-        <a href="#work">Our Work</a>
-        <a href="#about">About</a>
-        <a href="#faq">FAQ</a>
-
-        <a href="#contact" class="nav-cta">
-            Enquire
-        </a>
-
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="logo">Sully's <span>Detailing Studio</span></div>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#faq">FAQ</a>
+      <a href="#booking" class="btn-primary">Book Appointment</a>
     </nav>
+  </header>
 
-
-    <button class="hamburger" id="hamburger" aria-label="Open menu">
-
-        <span></span>
-        <span></span>
-        <span></span>
-
-    </button>
-
-</header>
-
-
-
-<!-- =====================================================
-     HERO
-===================================================== -->
-
-<main>
-
-<section id="home" class="hero">
-
-
-    <img
-        src="assets/hero/hero-bmw.webp"
-        alt="BMW photographed by Sully's Detailing Studio"
-        class="hero-image"
-    >
-
-
-    <div class="hero-vignette"></div>
-
-
+  <!-- Hero Section -->
+  <section class="hero dark-section">
     <div class="hero-content">
+      <h1 class="hero-title">Precision Detail. Unmatched Shine.</h1>
+      <p class="hero-subtitle">High-end paint correction, ceramic coatings, and boutique automotive preservation.</p>
+      <div class="hero-actions">
+        <a href="#booking" class="btn-primary">Reserve Your Slot</a>
+        <a href="#gallery" class="btn-secondary">View Work</a>
+      </div>
+    </div>
+  </section>
 
-        <div class="hero-kicker">
+  <!-- Before/After Visual Comparison -->
+  <section id="gallery" class="dark-section gallery-section">
+    <div class="container">
+      <h2 class="section-title">Paint Correction Results</h2>
+      <p class="section-subtitle">Drag the slider to inspect gloss restoration and swirl removal.</p>
+      
+      <div class="comparison-container">
+        <div class="image-wrapper before-wrapper">
+          <img src="https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&w=1400&q=80" alt="Before paint correction" class="comparison-img">
+          <span class="label label-before">Before</span>
+        </div>
+        
+        <div class="image-wrapper after-wrapper">
+          <img src="https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&w=1400&q=80" alt="After paint correction" class="comparison-img enhanced">
+          <span class="label label-after">After</span>
+        </div>
+        
+        <div class="slider-line"></div>
+        <input type="range" min="0" max="100" value="50" class="slider" aria-label="Before and after comparison slider">
+      </div>
+    </div>
+  </section>
 
-            <span></span>
-
-            PREMIUM AUTOMOTIVE DETAILING
-
-            <span></span>
-
+  <!-- Booking Section -->
+  <section id="booking" class="dark-section booking-section">
+    <div class="container">
+      <h2 class="section-title">Request a Consultation</h2>
+      <form class="booking-form" onsubmit="event.preventDefault();">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" placeholder="John Doe" required>
         </div>
 
-
-        <h1>
-
-            CLEAN IS<br>
-
-            <em>THE MINIMUM.</em>
-
-        </h1>
-
-
-        <p>
-
-            Bespoke automotive detailing, paint correction,
-            ceramic protection and professional PPF —
-            carried out with an obsessive eye for detail.
-
-        </p>
-
-
-        <div class="hero-actions">
-
-            <a href="#contact" class="button button-primary">
-
-                Enquire About Your Vehicle
-
-                <span>→</span>
-
-            </a>
-
-
-            <a href="#work" class="button button-ghost">
-
-                View Our Work
-
-            </a>
-
+        <div class="form-group">
+          <label for="vehicle">Vehicle Make & Model</label>
+          <input type="text" id="vehicle" placeholder="e.g. 2023 BMW M2" required>
         </div>
 
-
-        <div class="hero-location">
-
-            <span class="location-dot"></span>
-
-            BURY · GREATER MANCHESTER
-
+        <div class="form-group">
+          <label for="service">Desired Service Package</label>
+          <select id="service" required>
+            <option value="" disabled selected>Select a treatment...</option>
+            <option value="paint-correction">Multi-Stage Paint Correction</option>
+            <option value="ceramic-coating">Ceramic Coating Protection</option>
+            <option value="interior-detail">Boutique Interior Restoration</option>
+            <option value="full-studio">Full Studio Signature Package</option>
+          </select>
         </div>
 
+        <button type="submit" class="btn-primary form-submit">Submit Reservation Request</button>
+      </form>
     </div>
+  </section>
 
-
-    <div class="hero-scroll">
-
-        <span></span>
-
-        SCROLL TO EXPLORE
-
-    </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     INTRO STRIP
-===================================================== -->
-
-<section class="intro-strip">
-
-    <div>
-
-        <span>01</span>
-
-        <p>
-            DETAILING WITHOUT<br>
-            THE SHORTCUTS.
-        </p>
-
-    </div>
-
-
-    <div>
-
-        <span>02</span>
-
-        <p>
-            PRODUCTS CHOSEN<br>
-            FOR PERFORMANCE.
-        </p>
-
-    </div>
-
-
-    <div>
-
-        <span>03</span>
-
-        <p>
-            YOUR CAR.<br>
-            TREATED PROPERLY.
-        </p>
-
-    </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     SERVICES
-===================================================== -->
-
-<section id="services" class="section services-section">
-
-
-    <div class="section-heading">
-
-        <div>
-
-            <span class="section-number">01 — SERVICES</span>
-
-            <h2>
-                Protection.<br>
-                <em>Perfection.</em>
-            </h2>
-
-        </div>
-
-
-        <p>
-
-            Every vehicle is different.
-            Every service is tailored.
-            No unnecessary upselling — just
-            the right process for your car.
-
-        </p>
-
-    </div>
-
-
-
-    <div class="services-list">
-
-
-        <article class="service">
-
-            <div class="service-number">01</div>
-
-            <div class="service-image">
-
-                <img
-                    src="assets/services/detail.webp"
-                    alt="Automotive detailing"
-                >
-
+  <!-- FAQ Section -->
+  <section id="faq" class="dark-section faq-section">
+    <div class="container">
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>How long does a full ceramic coating treatment take?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="answer">
+            <div>
+              <p>Most full ceramic coating treatments take between 2 to 3 days. This timeline allows for thorough decontamination, multi-stage paint correction, coating application, and IR lamp curing in a climate-controlled environment.</p>
             </div>
-
-            <div class="service-info">
-
-                <h3>Detailing</h3>
-
-                <p>
-                    Deep exterior and interior detailing,
-                    decontamination and meticulous finishing
-                    for vehicles that deserve more than a wash.
-                </p>
-
-                <span>EXPLORE SERVICE →</span>
-
-            </div>
-
-        </article>
-
-
-
-        <article class="service">
-
-            <div class="service-number">02</div>
-
-            <div class="service-image">
-
-                <img
-                    src="assets/services/correction.webp"
-                    alt="Paint correction"
-                >
-
-            </div>
-
-            <div class="service-info">
-
-                <h3>Paint Correction</h3>
-
-                <p>
-                    Machine polishing designed to refine
-                    paintwork, reduce defects and reveal
-                    the depth and clarity hiding underneath.
-                </p>
-
-                <span>EXPLORE SERVICE →</span>
-
-            </div>
-
-        </article>
-
-
-
-        <article class="service">
-
-            <div class="service-number">03</div>
-
-            <div class="service-image">
-
-                <img
-                    src="assets/services/ceramic.webp"
-                    alt="Ceramic coating"
-                >
-
-            </div>
-
-            <div class="service-info">
-
-                <h3>Ceramic Coatings</h3>
-
-                <p>
-                    Long-lasting protection engineered to
-                    enhance gloss, hydrophobic behaviour
-                    and everyday paint maintenance.
-                </p>
-
-                <span>EXPLORE SERVICE →</span>
-
-            </div>
-
-        </article>
-
-
-
-        <article class="service service-featured">
-
-            <div class="service-number">04</div>
-
-            <div class="service-image">
-
-                <img
-                    src="assets/services/ppf.webp"
-                    alt="Paint protection film"
-                >
-
-            </div>
-
-            <div class="service-info">
-
-                <div class="service-tag">
-                    PROFESSIONAL INSTALLATION
-                </div>
-
-                <h3>Paint Protection Film</h3>
-
-                <p>
-                    Professional PPF installation providing
-                    a physical layer of protection against
-                    stone chips, road debris and everyday damage.
-                </p>
-
-                <span>EXPLORE SERVICE →</span>
-
-            </div>
-
-        </article>
-
-
-
-        <article class="service">
-
-            <div class="service-number">05</div>
-
-            <div class="service-image">
-
-                <img
-                    src="assets/services/interior.webp"
-                    alt="Interior detailing"
-                >
-
-            </div>
-
-            <div class="service-info">
-
-                <h3>Interior Detailing</h3>
-
-                <p>
-                    Thorough interior cleaning and protection
-                    covering leather, fabrics, plastics,
-                    glass and those hard-to-reach areas.
-                </p>
-
-                <span>EXPLORE SERVICE →</span>
-
-            </div>
-
-        </article>
-
-
-
-        <article class="service">
-
-            <div class="service-number">06</div>
-
-            <div class="service-image">
-
-                <img
-                    src="assets/services/newcar.webp"
-                    alt="New vehicle protection"
-                >
-
-            </div>
-
-            <div class="service-info">
-
-                <h3>New Car Protection</h3>
-
-                <p>
-                    Protect your vehicle from day one with
-                    a tailored combination of detailing,
-                    ceramic coating and PPF.
-                </p>
-
-                <span>EXPLORE SERVICE →</span>
-
-            </div>
-
-        </article>
-
-    </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     EXTRAS
-===================================================== -->
-
-<section class="extras-section">
-
-
-    <div class="extras-heading">
-
-        <span>OPTIONAL SERVICES</span>
-
-        <h2>
-            The little things<br>
-            <em>matter.</em>
-        </h2>
-
-    </div>
-
-
-    <div class="extras">
-
-        <span>Headlight Restoration</span>
-        <span>Wheel-Off Detailing</span>
-        <span>Wheel Ceramic Coating</span>
-        <span>Glass Protection</span>
-        <span>Engine Bay Detailing</span>
-        <span>Leather Protection</span>
-        <span>Fabric Protection</span>
-        <span>Pet Hair Removal</span>
-        <span>Tar & Iron Removal</span>
-        <span>Trim Restoration</span>
-        <span>Convertible Roof Protection</span>
-        <span>Maintenance Details</span>
-
-    </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     WORK
-===================================================== -->
-
-<section id="work" class="section work-section">
-
-
-    <div class="section-heading">
-
-        <div>
-
-            <span class="section-number">02 — OUR WORK</span>
-
-            <h2>
-                See the<br>
-                <em>difference.</em>
-            </h2>
-
+          </div>
         </div>
-
-
-        <p>
-
-            A selection of vehicles that have passed
-            through the hands of Sully's Detailing Studio.
-
-        </p>
-
-    </div>
-
-
-
-    <div class="gallery">
-
-
-        <div class="gallery-item gallery-large">
-
-            <img
-                src="assets/gallery/bmw/after-1.webp"
-                alt="BMW detailing result"
-            >
-
-            <div class="gallery-caption">
-                BMW · PAINT ENHANCEMENT
-            </div>
-
-        </div>
-
-
-        <div class="gallery-item">
-
-            <img
-                src="assets/gallery/bmw/after-2.webp"
-                alt="BMW detailing"
-            >
-
-        </div>
-
-
-        <div class="gallery-item">
-
-            <img
-                src="assets/gallery/bmw/interior.webp"
-                alt="BMW interior detailing"
-            >
-
-        </div>
-
-
-        <div class="gallery-item gallery-wide">
-
-            <img
-                src="assets/gallery/ppf/front.webp"
-                alt="Paint protection film installation"
-            >
-
-            <div class="gallery-caption">
-                PAINT PROTECTION FILM
-            </div>
-
-        </div>
-
-
-        <div class="gallery-item">
-
-            <img
-                src="assets/gallery/headlights/after.webp"
-                alt="Headlight restoration"
-            >
-
-        </div>
-
-
-        <div class="gallery-item">
-
-            <img
-                src="assets/gallery/interior/interior-1.webp"
-                alt="Interior detailing"
-            >
-
-        </div>
-
-    </div>
-
-
-</section>
-
-
-
-<!-- =====================================================
-     ABOUT
-===================================================== -->
-
-<section id="about" class="about-section">
-
-
-    <div class="about-image">
-
-        <img
-            src="assets/about/sully.webp"
-            alt="Sully — founder of Sully's Detailing Studio"
-        >
-
-    </div>
-
-
-    <div class="about-content">
-
-        <span class="section-number">
-            03 — ABOUT SULLY
-        </span>
-
-
-        <h2>
-
-            From roadside<br>
-            washes to a<br>
-            <em>detailing studio.</em>
-
-        </h2>
-
-
-        <p class="about-lead">
-
-            I'm Sully — founder, detailer,
-            materials scientist and unapologetic
-            detailing nerd.
-
-        </p>
-
-
-        <p>
-
-            Long before there was a studio,
-            there was me, a car, a bucket and
-            an unhealthy obsession with getting
-            paintwork absolutely right.
-
-        </p>
-
-
-        <p>
-
-            I started detailing cars on the side
-            of the road. Since then, that obsession
-            has evolved into something considerably
-            more serious.
-
-        </p>
-
-
-        <p>
-
-            I hold a PhD in Materials Science,
-            so naturally I ended up researching
-            coatings, abrasives, surface chemistry
-            and protection products far more than
-            any normal person probably should.
-
-        </p>
-
-
-        <p>
-
-            Every product used at the studio is
-            selected because I believe it earns
-            its place here — not because the bottle
-            has the best marketing.
-
-        </p>
-
-
-        <div class="about-signature">
-
-            SULLY KHAN
-
-            <span>
-                FOUNDER · SULLY'S DETAILING STUDIO
-            </span>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     WHY US
-===================================================== -->
-
-<section class="why-section">
-
-
-    <div class="why-intro">
-
-        <span class="section-number">
-            04 — WHY SULLY'S
-        </span>
-
-        <h2>
-            Science behind<br>
-            <em>the shine.</em>
-        </h2>
-
-    </div>
-
-
-    <div class="why-grid">
-
-
-        <div class="why-card">
-
-            <span>01</span>
-
-            <i class="fas fa-flask"></i>
-
-            <h3>Materials Science</h3>
-
-            <p>
-                Technical knowledge applied to
-                real-world detailing and protection.
-            </p>
-
-        </div>
-
-
-        <div class="why-card">
-
-            <span>02</span>
-
-            <i class="fas fa-vial"></i>
-
-            <h3>Product Obsession</h3>
-
-            <p>
-                Products researched for performance,
-                compatibility and finish.
-            </p>
-
-        </div>
-
-
-        <div class="why-card">
-
-            <span>03</span>
-
-            <i class="fas fa-shield-halved"></i>
-
-            <h3>Protection First</h3>
-
-            <p>
-                From coatings to professional PPF,
-                protection is part of the process.
-            </p>
-
-        </div>
-
-
-        <div class="why-card">
-
-            <span>04</span>
-
-            <i class="fas fa-car"></i>
-
-            <h3>Enthusiast Owned</h3>
-
-            <p>
-                Your car isn't just another booking.
-                It's treated like it belongs to me.
-            </p>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     FAQ
-===================================================== -->
-
-<section id="faq" class="section faq-section">
-
-
-    <div class="section-heading">
-
-        <div>
-
-            <span class="section-number">
-                05 — FAQ
-            </span>
-
-            <h2>
-                Before you<br>
-                <em>book.</em>
-            </h2>
-
-        </div>
-
-    </div>
-
-
-    <div class="faq">
-
 
         <div class="faq-item">
-
-            <button>
-                How do you decide what my car needs?
-            </button>
-
-            <div class="answer">
-
-                Every vehicle is assessed individually.
-                We consider its condition, paintwork,
-                usage and what you actually want to achieve
-                before recommending a service.
-
+          <button class="faq-question">
+            <span>What is the difference between wax and ceramic coatings?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="answer">
+            <div>
+              <p>Traditional waxes lay on top of the paint surface and last 1–3 months. Nano-ceramic coatings chemically bond to your vehicle's clear coat, forming a hard, hydrophobic glass-like layer that lasts several years.</p>
             </div>
-
+          </div>
         </div>
-
 
         <div class="faq-item">
-
-            <button>
-                Is your pricing competitive?
-            </button>
-
-            <div class="answer">
-
-                Yes. We aim to provide premium work at
-                competitive prices. Every quotation is
-                tailored to the vehicle rather than forcing
-                every customer into a fixed package.
-
+          <button class="faq-question">
+            <span>Do I need to clean my vehicle before dropping it off?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="answer">
+            <div>
+              <p>No prior washing is needed. Every package begins with our multi-step decontamination rinse, iron removal wash, and clay bar treatment to ensure an immaculate surface.</p>
             </div>
-
+          </div>
         </div>
-
-
-        <div class="faq-item">
-
-            <button>
-                What products do you use?
-            </button>
-
-            <div class="answer">
-
-                Premium products selected through research,
-                testing and experience. The goal is simple:
-                use what works, not what simply looks good
-                on a shelf.
-
-            </div>
-
-        </div>
-
-
-        <div class="faq-item">
-
-            <button>
-                Can you work on brand-new vehicles?
-            </button>
-
-            <div class="answer">
-
-                Absolutely. New vehicles are ideal candidates
-                for early protection, particularly ceramic
-                coatings and PPF.
-
-            </div>
-
-        </div>
-
-
-        <div class="faq-item">
-
-            <button>
-                Can I combine different services?
-            </button>
-
-            <div class="answer">
-
-                Definitely. Paint correction, ceramic coating,
-                PPF, interior protection and specialist extras
-                can all be combined into a tailored service.
-
-            </div>
-
-        </div>
-
-
-        <div class="faq-item">
-
-            <button>
-                Do you offer maintenance services?
-            </button>
-
-            <div class="answer">
-
-                Yes. Maintenance detailing is available for
-                vehicles previously treated by the studio,
-                helping preserve the finish and protection.
-
-            </div>
-
-        </div>
-
-
-        <div class="faq-item">
-
-            <button>
-                How do I get a quotation?
-            </button>
-
-            <div class="answer">
-
-                Send an enquiry using the booking form below.
-                If possible, include your vehicle, the service
-                you're interested in and a few details about
-                its current condition.
-
-            </div>
-
-        </div>
-
+      </div>
     </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     CONTACT
-===================================================== -->
-
-<section id="contact" class="contact-section">
-
-
-    <div class="contact-copy">
-
-        <span class="section-number">
-            06 — ENQUIRE
-        </span>
-
-
-        <h2>
-
-            Let's talk<br>
-
-            <em>about your car.</em>
-
-        </h2>
-
-
-        <p>
-
-            Tell me what you're driving,
-            what you'd like done and what
-            you're hoping to achieve.
-
-        </p>
-
-
-        <div class="contact-email">
-
-            <span>EMAIL</span>
-
-            <a href="mailto:hello@sullysdetailingstudio.co.uk">
-
-                hello@sullysdetailingstudio.co.uk
-
-            </a>
-
-        </div>
-
-    </div>
-
-
-
-    <form
-        action="https://formsubmit.co/hello@sullysdetailingstudio.co.uk"
-        method="POST"
-        class="booking-form"
-    >
-
-        <input
-            type="hidden"
-            name="_subject"
-            value="New Enquiry — Sully's Detailing Studio"
-        >
-
-        <input
-            type="hidden"
-            name="_next"
-            value="https://sullysdetailingstudio.co.uk/thanks.html"
-        >
-
-        <input
-            type="hidden"
-            name="_template"
-            value="table"
-        >
-
-        <input
-            type="hidden"
-            name="_autoresponse"
-            value="Hi! Thank you for contacting Sully's Detailing Studio. We've received your enquiry and will endeavour to respond as soon as possible. A copy of your enquiry has been received. Clean is the Minimum. Sully Khan — Founder, Sully's Detailing Studio."
-        >
-
-
-        <div class="form-field">
-
-            <label>Name</label>
-
-            <input
-                type="text"
-                name="Name"
-                placeholder="Your name"
-                required
-            >
-
-        </div>
-
-
-        <div class="form-field">
-
-            <label>Email</label>
-
-            <input
-                type="email"
-                name="email"
-                placeholder="you@example.com"
-                required
-            >
-
-        </div>
-
-
-        <div class="form-field">
-
-            <label>Phone</label>
-
-            <input
-                type="tel"
-                name="Phone"
-                placeholder="Your number"
-                required
-            >
-
-        </div>
-
-
-        <div class="form-field">
-
-            <label>Vehicle</label>
-
-            <input
-                type="text"
-                name="Vehicle"
-                placeholder="Make & model"
-                required
-            >
-
-        </div>
-
-
-        <div class="form-field form-full">
-
-            <label>Service</label>
-
-            <select name="Service" required>
-
-                <option value="" disabled selected>
-                    What are you interested in?
-                </option>
-
-                <option>
-                    Detailing
-                </option>
-
-                <option>
-                    Paint Correction
-                </option>
-
-                <option>
-                    Ceramic Coating
-                </option>
-
-                <option>
-                    Paint Protection Film
-                </option>
-
-                <option>
-                    Interior Detailing
-                </option>
-
-                <option>
-                    Headlight Restoration
-                </option>
-
-                <option>
-                    Maintenance Detail
-                </option>
-
-                <option>
-                    I'm not sure — recommend a service
-                </option>
-
-            </select>
-
-        </div>
-
-
-        <div class="form-field form-full">
-
-            <label>Message</label>
-
-            <textarea
-                name="Message"
-                placeholder="Tell me about your vehicle..."
-                rows="6"
-            ></textarea>
-
-        </div>
-
-
-        <button
-            type="submit"
-            class="form-submit"
-        >
-
-            SEND ENQUIRY
-
-            <span>→</span>
-
-        </button>
-
-    </form>
-
-</section>
-
-
-
-<!-- =====================================================
-     INSTAGRAM
-===================================================== -->
-
-<section class="instagram-section">
-
-    <div>
-
-        <span>FOLLOW THE BUILD</span>
-
-        <h2>
-            <a
-                href="https://www.instagram.com/sullysdetailingstudio/"
-                target="_blank"
-                rel="noopener"
-            >
-                @sullysdetailingstudio
-            </a>
-        </h2>
-
-    </div>
-
-
-    <a
-        href="https://www.instagram.com/sullysdetailingstudio/"
-        target="_blank"
-        rel="noopener"
-        class="instagram-link"
-    >
-        VIEW INSTAGRAM →
-    </a>
-
-</section>
-
-
-
-</main>
-
-
-
-<!-- =====================================================
-     FOOTER
-===================================================== -->
-
-<footer>
-
-    <div class="footer-brand">
-
-        <img
-            src="assets/logo/shield.png"
-            alt="Sully's Detailing Studio"
-        >
-
-        <div>
-
-            <strong>SULLY'S DETAILING STUDIO</strong>
-
-            <span>
-                CLEAN IS THE MINIMUM.
-            </span>
-
-        </div>
-
-    </div>
-
-
-    <div class="footer-links">
-
-        <a href="#services">Services</a>
-        <a href="#work">Our Work</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-
-    </div>
-
-
-    <div class="footer-bottom">
-
-        <span>
-            Bury · Greater Manchester
-        </span>
-
-        <span>
-            © 2026 Sully's Detailing Studio
-        </span>
-
-    </div>
-
-</footer>
-
-
-
-<!-- LIGHTBOX -->
-
-<div id="lightbox">
-
-    <button id="closeLightbox">×</button>
-
-    <img id="lightboxImage" src="" alt="">
-
-</div>
-
-
-
-<script src="script.js"></script>
-
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2026 Sully's Detailing Studio. All rights reserved.</p>
+  </footer>
+
+  <!-- Interactivity Logic -->
+  <script>
+    // Before / After Slider Logic
+    const slider = document.querySelector('.slider');
+    const afterWrapper = document.querySelector('.after-wrapper');
+    const sliderLine = document.querySelector('.slider-line');
+
+    if (slider && afterWrapper && sliderLine) {
+      slider.addEventListener('input', (e) => {
+        const val = e.target.value;
+        afterWrapper.style.width = `${val}%`;
+        sliderLine.style.left = `${val}%`;
+      });
+    }
+
+    // FAQ Accordion Logic (CSS Grid Transition compatible)
+    const faqItems = document.querySelectorAll('.faq-item');
+    faqItems.forEach(item => {
+      const questionBtn = item.querySelector('.faq-question');
+      questionBtn.addEventListener('click', () => {
+        const isActive = item.classList.contains('active');
+        faqItems.forEach(el => el.classList.remove('active'));
+        if (!isActive) {
+          item.classList.add('active');
+        }
+      });
+    });
+  </script>
 </body>
-
 </html>
